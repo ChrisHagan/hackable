@@ -5,13 +5,7 @@ extensions: {}
 environment: ghc-7.4.2-unstable
 cabal-file: project.cabal
 hidden-packages: ''
-modules:
-  Chat.Data:
-    filename: src/Chat/Data.hs
-  Chat:
-    filename: src/Chat.hs
-  Main(src/Main.hs):
-    filename: src/Main.hs
 version: 1
 extra-packages: ''
 ghc-args: []
+excluded-modules: []

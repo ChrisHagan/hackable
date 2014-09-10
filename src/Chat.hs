@@ -65,7 +65,7 @@ getReceiveR = do
     -- the channel of events to read from, and the WAI request. It returns a
     -- WAI response, which we can return with sendWaiResponse.
     req <- waiRequest
-    res <- liftResourceT $ eventSourceAppChan chan req
+    res <- liftIO $ eventSourceAppChan chan req
     sendWaiResponse res
 
 -- | Provide a widget that the master site can embed on any page.
